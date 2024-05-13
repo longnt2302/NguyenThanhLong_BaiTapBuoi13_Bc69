@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>NguyenThanhLong_BaiTapBuoi13_Bc69</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        p {
+            margin-bottom: 0;
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-danger">Bài tập 1: Tính tiền lương nhân viên</h2>
+        <p class="text-warning">
+            Lương 1 ngày là : 100.000 VND<br>
+            Công thức là :<br>
+            Tổng lương = Lương 1 ngày * Số ngày công
+        </p>
+        <div class="mb-3">
+            <label for="" class="form-label text-primary">Nhập số ngày công</label>
+            <input type="number" class="form-control" name="" id="soNgayCong" aria-describedby="helpId"
+                placeholder="Nhập số ngày công" />
+        </div>
+        <button class="btn btn-success" id="btnBai1">Tính tiền lương</button>
+        <div class="bg-danger bg-opacity-75 text-white mt-3 p-2" id="resB1">Số tiền lương là : </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container">
+        <h2 class="text-danger">Bài tập 2: Tính giá trung bình</h2>
+        <p class="text-warning">
+            Trung bình cộng = ( Số thứ 1 + Số thứ 2 + Số thứ 3 + Số thứ 4 + Số thứ 5 ) / 5;
+        </p>
+        <form class="row gx-3 mt-2">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Số thứ 1</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="soThuNhat"
+                        class="form-control soThuc"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Số thứ 2</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="soThuHai"
+                        class="form-control soThuc"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Số thứ 3</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="soThuBa"
+                        class="form-control soThuc"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Số thứ 4</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="soThuBon"
+                        class="form-control soThuc"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Số thứ 5</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="soThuNam"
+                        class="form-control soThuc"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-success" id="btnBai2">Tính trung bình</button>
+        <div class="bg-danger bg-opacity-75 text-white mt-3 p-2" id="resB2">Kết quả trung bình là : </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container">
+        <h2 class="text-danger">Bài tập 3: Quy đổi tiền</h2>
+        <p class="text-warning">Giá trị tiền tệ : $1 = 23.500 VND</p>
+        <div class="mb-3">
+            <label for="" class="form-label text-primary">Nhập số Dollars ($)</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id="soTienDo"
+                aria-describedby="helpId"
+                placeholder=""
+            />
+        </div>
+        <button class="btn btn-success" id="btnBai3">Quy đổi</button>
+        <div class="bg-danger bg-opacity-75 text-white mt-3 p-2" id="resB3">Số tiền cần đổi là :</div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container">
+        <h2 class="text-danger">Bài tập 4: Tính diện tích, chu vi hình chữ nhật</h2>
+        <p class="text-warning">
+            Công thức tính :<br>
+            Diện tích = dài * rộng<br>
+            Chu vi = ( dài + rộng ) * 2
+        </p>
+        <form class="row gx-3">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Chiều dài</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="chieuDai"
+                        class="form-control"
+                        placeholder="Nhập chiều dài"
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label text-primary">Chiều rộng</label>
+                    <input
+                        type="number"
+                        name=""
+                        id="chieuRong"
+                        class="form-control"
+                        placeholder="Nhập chiều rộng"
+                        aria-describedby="helpId"
+                    />
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-success" id="btnBai4">Tính</button>
+        <div class="bg-danger bg-opacity-75 text-white mt-3 p-2" id="resBai4">
+            Diện tích là : </br>
+            Chu vi là :
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container mb-5">
+        <h2 class="text-danger">Bài tập 5: Tính tổng 2 ký số</h2>
+        <p class="text-warning">
+            Ví dụ : 25 => 2 + 5 = 7
+        </p>
+        <div class="mb-3">
+            <label for="" class="form-label text-primary">Số bất kỳ có 2 chữ số</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="soBatKy"
+                aria-describedby="helpId"
+                placeholder="Nhập số bất kỳ có 2 chữ số"
+            />
+        </div>
+        <button class="btn btn-success" id="btnBai5">Tính tổng ký số</button>
+        <div class="bg-danger bg-opacity-75 text-white mt-3 p-2" id="resBai5">Tổng ký của giá trị có 2 chữ số</div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
