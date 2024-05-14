@@ -95,5 +95,5 @@ document.getElementById('btnBai5').onclick = function () {
     let soThuNhat = Math.floor(soBatKy / 10);
     let soThuHai = soBatKy % 10;
     let tongKy = soThuNhat + soThuHai;
-    document.getElementById('resBai5').innerHTML = `Tổng ký của giá trị có 2 chữ số ${soBatKy} là : ${tongKy}`;
+    document.getElementById('resBai5').innerHTML = `Tổng ký giá trị có hai chữ số ${soBatKy} là : ${tongKy}`;
 };
